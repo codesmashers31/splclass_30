@@ -1,0 +1,54 @@
+<script>
+
+
+const createBankAccout = (initialValue)=>{
+
+   
+    let balance = initialValue
+
+    return {
+
+      deposit: (amount)=>{
+        balance += amount 
+
+        return `deposit : ${amount}`
+      },
+
+      withdraw: (amount)=>{
+
+        if(amount > balance){
+            return "Balance is not that much"
+        }
+
+        balance -= amount
+
+        return `withdraw : ${amount}`
+
+      },
+
+      getbalance : ()=>{
+
+        return  `Current Balace ${balance}`
+
+      }
+
+   
+
+    }
+
+
+
+}
+
+
+
+const accout = createBankAccout(1000)
+
+console.log(accout.getbalance());
+console.log(accout.deposit(2000));
+
+console.log(accout.getbalance());
+console.log(accout.withdraw(5000));
+
+console.log(accout.getbalance());
+</script>
