@@ -1,0 +1,86 @@
+<script>
+    // const arr = [1,2,3,4]
+
+    // console.log(arr);
+
+// const app = (cb)=>{
+
+//    console.log('Ruuning');
+   
+//     cb()
+
+
+
+
+// }
+
+// const count = ()=>{
+//     console.log(1+1);
+    
+// }
+
+
+// app(count)
+
+
+
+
+
+// const app = (count)=>{
+
+//     count + 1
+//     count()
+
+// }
+
+
+
+// app(()=>{
+
+
+//     console.log('count',1+1);
+    
+// })
+
+
+const processUser = (name, callback) =>{
+
+    console.log('name',name);
+    callback()
+
+}
+
+
+const login = ()=>{
+
+    console.log('successfully login');
+    
+
+}
+
+
+const logout = () =>{
+
+    console.log('successfully Logout');
+
+}
+
+
+processUser('React',login)
+processUser('Users',logout)
+
+
+
+const pushedvalue = (...values)=>{
+
+    console.log(values);
+    
+
+}
+
+
+
+
+pushedvalue(1,2,3,4,5)
+    
+</script>
